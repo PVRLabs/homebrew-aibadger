@@ -1,15 +1,19 @@
 # homebrew-aibadger
 
-Public Homebrew tap for `badger`.
+Deprecated Homebrew tap for `badger`.
 
-Install:
+The active Homebrew tap is now [`PVRLabs/homebrew-tap`](https://github.com/PVRLabs/homebrew-tap). New installs should use:
 
 ```bash
-brew tap pvrlabs/aibadger
-brew install pvrlabs/aibadger/badger
+brew install pvrlabs/tap/badger
 ```
 
-The formula downloads release archives from GitHub Releases for
-`github.com/PVRLabs/aibadger`.
+If you already tapped this repository, switch to the shared tap:
 
-For maintainers, see [PUBLISHING.md](PUBLISHING.md).
+```bash
+brew uninstall badger 2>/dev/null || true
+brew untap pvrlabs/aibadger
+brew install pvrlabs/tap/badger
+```
+
+This repository is kept only as a temporary compatibility/redirect surface. Future formula updates belong in `PVRLabs/homebrew-tap`.
